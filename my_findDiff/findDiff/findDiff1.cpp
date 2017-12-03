@@ -14,9 +14,9 @@
 
 using namespace std;
 
-bool findDiff1() {
-    ifstream file1("text1.txt");
-    ifstream file2("text2.txt");
+bool findDiff1(string text1, string text2) {
+    ifstream file1(text1);
+    ifstream file2(text2);
     int diff = 0;
     unordered_map<string, int> cnt;
     string w1, w2;
@@ -26,7 +26,7 @@ bool findDiff1() {
         cnt[w1]++;
         cnt[w2]--;
     }
-    for (auto it : cnt) {
+    for (auto &it : cnt) {
         if (it.second != 0) {
             ++diff;
         }

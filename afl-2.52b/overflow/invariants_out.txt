@@ -1,0 +1,16 @@
+Daikon version 5.5.14, released October 3, 2017; http://plse.cs.washington.edu/daikon.
+Reading declaration files .(read 1 decls file)
+Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+..main():::ENTER
+argc == 5
+argv has only one value
+argv[] == [./binary]
+argv[] elements == "./binary"
+===========================================================================
+..main():::EXIT
+argv[] == [./binary]
+argv[] elements == "./binary"
+return == 0
+Exiting Daikon.

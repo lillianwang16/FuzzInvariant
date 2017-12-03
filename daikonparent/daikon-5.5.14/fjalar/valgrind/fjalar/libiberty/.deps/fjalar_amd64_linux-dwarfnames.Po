@@ -1,0 +1,8 @@
+libiberty/fjalar_amd64_linux-dwarfnames.o: libiberty/dwarfnames.c \
+ include/dwarf2.h include/dwarf2.def include/dwarf2.def
+
+include/dwarf2.h:
+
+include/dwarf2.def:
+
+include/dwarf2.def:

@@ -1,0 +1,31 @@
+Daikon version 5.5.14, released October 3, 2017; http://plse.cs.washington.edu/daikon.
+Reading declaration files .(read 1 decls file)
+Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+..binarySearch():::ENTER
+arr has only one value
+arr != null
+arr[] == [0]
+arr[] elements == 0
+l one of { 0, 6, 7 }
+r one of { 6, 7, 11 }
+x == 10
+===========================================================================
+..binarySearch():::EXIT
+arr[] == orig(arr[])
+arr[] == [0]
+arr[] elements == 0
+return == -1
+===========================================================================
+..main():::ENTER
+argc == 2
+argv has only one value
+argv[] == [/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow]
+argv[] elements == "/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow"
+===========================================================================
+..main():::EXIT
+argv[] == [/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow]
+argv[] elements == "/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow"
+return == 0
+Exiting Daikon.
