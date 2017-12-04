@@ -2,15 +2,25 @@
 #include <stdlib.h>
 #include <errno.h>   // for errno
 #include <limits.h>  // for INT_MAX
- 
+#include <math.h>
+
 // A recursive binary search function. It returns location of x in
 // given array arr[l..r] is present, otherwise -1
 int binarySearch(int arr[], int l, int r, int x)
 {
    if (r >= l)
    {
- 		int mid = (l+r)/2;
- 		//printf("(l = %d, mid = %d, r = %d)\n",l,mid,r);
+   		int p = 20;
+ 		l *= pow(2, p);
+ 		r *= pow(2, p);
+ 		int mid = (l+r)/pow(2, p+1);
+ 		l /= pow(2, p);
+ 		r /= pow(2, p);
+
+
+ 		printf("(l = %d, mid = %d, r = %d)\n",l,mid,r);
+
+ 		if(mid < 0) abort();
         // If the element is present at the middle itself
         if (arr[mid] == x)  return mid;
  
@@ -58,6 +68,7 @@ int main(int argc, char * argv [])
 
 
    for(int i = size1-size2; i < size1; i++){
+   		if(i < 0) continue;
    		printf("%d ",arr1[i]);
    }
    printf("\n");
