@@ -10,7 +10,7 @@ int binarySearch(int arr[], int l, int r, int x)
 {
    if (r >= l)
    {
-   		int p = 20;
+   		int p = 24;
  		l *= pow(2, p);
  		r *= pow(2, p);
  		int mid = (l+r)/pow(2, p+1);
@@ -18,7 +18,7 @@ int binarySearch(int arr[], int l, int r, int x)
  		r /= pow(2, p);
 
 
- 		printf("(l = %d, mid = %d, r = %d)\n",l,mid,r);
+ 		//printf("(l = %d, mid = %d, r = %d)\n",l,mid,r);
 
  		if(mid < 0) abort();
         // If the element is present at the middle itself
