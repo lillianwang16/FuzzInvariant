@@ -1,0 +1,2 @@
+Total tries: 2
+Interesting cases: 2

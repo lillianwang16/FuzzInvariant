@@ -5,28 +5,21 @@ Processing trace data; reading 1 dtrace file:
 ===========================================================================
 ..binarySearch():::ENTER
 arr has only one value
-arr != null
-arr[] == [0]
-arr[] elements == 0
-l one of { 0, 6, 7 }
-r one of { 6, 7, 11 }
+l == 0
+r == -1
 x == 10
 ===========================================================================
 ..binarySearch():::EXIT
-arr[] == orig(arr[])
-arr[] == [0]
-arr[] elements == 0
 return == -1
 ===========================================================================
 ..main():::ENTER
 argc == 2
 argv has only one value
-argv != null
-argv[] == [/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow]
-argv[] elements == "/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow"
+argv[] == [/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow]
+argv[] elements == "/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow"
 ===========================================================================
 ..main():::EXIT
-argv[] == [/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow]
-argv[] elements == "/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow"
+argv[] == [/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow]
+argv[] elements == "/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow"
 return == 0
 Exiting Daikon.

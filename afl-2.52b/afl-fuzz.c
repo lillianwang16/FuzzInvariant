@@ -92,6 +92,7 @@ EXP_ST u8 *in_dir,                    /* Input directory with test cases  */
           *orig_cmdline,              /* Original command line            */
 	  *daikon_file;
 static int total_tries = 0;
+static int tried_runs = 0;
 //TODO::Kathy
 
 
@@ -187,8 +188,8 @@ EXP_ST u64 total_crashes,             /* Total number of crashes          */
            bytes_trim_in,             /* Bytes coming into the trimmer    */
            bytes_trim_out,            /* Bytes coming outa the trimmer    */
            blocks_eff_total,          /* Blocks subject to effector maps  */
-           blocks_eff_select,         /* Blocks selected as fuzzable      */
-	   new_test_case_count = 1;
+           blocks_eff_select;         /* Blocks selected as fuzzable      */
+static int new_test_case_count = 0;
 static u32 subseq_tmouts;             /* Number of timeouts in a row      */
 
 static u8 *stage_name = "init",       /* Name of the current fuzz stage   */
@@ -1305,10 +1306,11 @@ static void cull_queue(void) {
   pending_favored = 0;
 
   q = queue;
-
+//TODO::Kathy
   while (q) {
     q->favored = 0;
     q = q->next;
+    //queued_favored++;
   }
 
   /* Let's see if anything in the bitmap isn't captured in temp_v.
@@ -1338,6 +1340,7 @@ static void cull_queue(void) {
     mark_as_redundant(q, !q->favored);
     q = q->next;
   }
+
 
 }
 
@@ -1483,7 +1486,9 @@ static void read_testcases(void) {
 
     if (!access(dfn, F_OK)) passed_det = 1;
     ck_free(dfn);
-
+    //TODO::Kathy
+    //printf(st);
+    //printf("%d\n",(int)st.st_size);
     add_to_queue(fn, st.st_size, passed_det);
 
   }
@@ -2233,7 +2238,7 @@ EXP_ST void init_forkserver(char** argv) {
 
          "%s"
          "    - The current memory limit (%s) is too restrictive, causing an OOM\n"
-         "      fault in the dynamic linker. This can be fixed with the -m option. A\n"
+         "       in the dynamic linker. This can be fixed with the -m option. A\n"
          "      simple way to confirm the diagnosis may be:\n\n"
 
 #ifdef RLIMIT_AS
@@ -2495,22 +2500,25 @@ static void write_to_testcase(void* mem, u32 len) {
 
 }
 //TODO::Kathy added
-static void write_to_results(int n) {
-
-    FILE *f = fopen("report.txt", "w");
+static void write_to_results() {
+    u8* fn = alloc_printf("%s/report.txt",out_dir); 
+    FILE *f = fopen(fn, "w");
     if (f == NULL) {
-        printf("Error opening file!\n");
+        printf("Error opening file! %s\n",fn);
         exit(1);
     }
 
 
     /* print integers and floats */
     
-    fprintf(f, "Tries: %d", n);
+    fprintf(f, "Total tries: %d\n", total_tries);
+    fprintf(f, "Interesting cases: %d\n", new_test_case_count);
+    fprintf(f, "Tried cases: %d\n", tried_runs);
 
     /* printing single chatacters */
 
     fclose(f);
+    abort();
 }
 static void write_for_daikon(void* mem, u32 len) {
   //printf("Write to Daikon input\n\n\n");
@@ -3171,31 +3179,63 @@ static u8 save_if_interesting(char** argv, void* mem, u32 len, u8 fault) {
 
     /* Keep only if there are new bits in the map, add to queue for
        future fuzzing, etc. */
-/*
+
     if (!(hnb = has_new_bits(virgin_bits))) {
-      printf("tried %d test cases\n", total_tries++); 
-      if (crash_mode) total_crashes++;
-      return 0;
+      //printf("tried %d test cases\n", total_tries++); 
+      //if (crash_mode) total_crashes++;
+      //write_to_results(total_tries, new_test_case_count);
+      //return 0;
     }
-*/  
+    total_tries++;
     write_for_daikon(mem, len);
-    int status = system("python script/script.py");  
-    int c;
-    FILE *file;
-    file = fopen("script/isDiff.txt", "r");
-    if (file) {
-        while ((c = getc(file)) != EOF)
-            putchar(c);
-        fclose(file);
-    }
-    if (c == 0) {
+    int result = system("bash script/script.sh");
+    sleep(10);
+    printf("result if %d\n\n", result);
+    //FILE* fp = NULL;
+    //fp = popen("script/script.sh", "r");
+    //if (fp == NULL) {
+    //     abort();
+   //     printf("Failed");
+   // }
+
+   // char result[1] = {0};
+   // fgets(result, sizeof(result), fp);
+    //pclose(fp);
+    //int c;
+    //FILE *file = fopen("script/isDiff.txt", "r");
+    //fscanf(file, "%d", &c);
+    //fclose(file);
+    if (result == 0) {
+        printf("saw 0");
         return 0;
     }
-    hnb = 2;
-    //if (*(int8_t*)mem < 2000) {return 0;}
+    else if (result == 2) {
+        printf("saw 2");
+        #ifndef SIMPLE_FILES
+
+            fn = alloc_printf("%s/crashes/id:%06llu,sig:%02u,%s", out_dir,
+                        unique_crashes, kill_signal, describe_op(0));
+
+       #else
+
+            fn = alloc_printf("%s/crashes/id_%06llu_%02u", out_dir, unique_crashes,
+                        kill_signal);
+
+        #endif /* ^!SIMPLE_FILES */
+
+        total_crashes++;
+        write_to_results();
+    
+    }
+    else if (result == -1) {
+        printf("None of the result is valid\n\n");
+        abort();
+    }
+
+    //printf("mem: %d\n", *(int8_t*)mem);
+    //if (*(int8_t*)mem < 100) {return 0;}
     //TODO:Kathy
-    //new_test_case_count++;
-    printf("Found new interesting test case by coverage, total found: %d\n", total_tries++);
+    printf("Found new interesting test case by coverage, total found: %d\n", new_test_case_count++);
     printf("mem");
     printf("%d\n", *(int8_t*)mem);
 #ifndef SIMPLE_FILES
@@ -3211,7 +3251,7 @@ static u8 save_if_interesting(char** argv, void* mem, u32 len, u8 fault) {
 
     printf("%s\n", fn);
         add_to_queue(fn, len, 0);
-
+    hnb = 2;
     if (hnb == 2) {
       queue_top->has_new_cov = 1;
       queued_with_cov++;
@@ -3310,7 +3350,6 @@ keep_as_crash:
          cases. */
 
       total_crashes++;
-      write_to_results(total_tries);
       if (unique_crashes >= KEEP_UNIQUE_CRASH) return keeping;
 
       if (!dumb_mode) {
@@ -3344,10 +3383,12 @@ keep_as_crash:
       last_crash_time = get_cur_time();
       last_crash_execs = total_execs;
 
+      //write_to_results();
       break;
 
     case FAULT_ERROR: FATAL("Unable to execute target application");
 
+    //write_to_results();
     default: return keeping;
 
   }
@@ -4664,7 +4705,7 @@ EXP_ST u8 common_fuzz_stuff(char** argv, u8* out_buf, u32 len) {
   }
 
   write_to_testcase(out_buf, len);
-
+  tried_runs++;
   fault = run_target(argv, exec_tmout);
 
   if (stop_soon) return 1;
@@ -5064,13 +5105,14 @@ static u8 fuzz_one(char** argv) {
   /* Map the test case into memory. */
 
   fd = open(queue_cur->fname, O_RDONLY);
-
+  //TODO::Kathy
+  printf("Open queue\n");
   if (fd < 0) PFATAL("Unable to open '%s'", queue_cur->fname);
 
   len = queue_cur->len;
 
   orig_in = in_buf = mmap(0, len, PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0);
-
+  printf("in_buf: %d\n", *(int8_t*)in_buf);
   if (orig_in == MAP_FAILED) PFATAL("Unable to mmap '%s'", queue_cur->fname);
 
   close(fd);

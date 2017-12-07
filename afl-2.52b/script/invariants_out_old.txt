@@ -2,29 +2,10 @@ Daikon version 5.5.14, released October 3, 2017; http://plse.cs.washington.edu/d
 Reading declaration files .(read 1 decls file)
 Processing trace data; reading 1 dtrace file:
 
-===========================================================================
-..binarySearch():::ENTER
-arr != null
-arr[] == [0]
-arr[] elements == 0
-l one of { 0, 6, 7 }
-r one of { 6, 7, 11 }
-x == 10
-===========================================================================
-..binarySearch():::EXIT
-arr[] == orig(arr[])
-arr[] == [0]
-arr[] elements == 0
-return == -1
-===========================================================================
-..main():::ENTER
-argc == 2
-argv != null
-argv[] == [/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow]
-argv[] elements == "/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow"
-===========================================================================
-..main():::EXIT
-argv[] == [/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow]
-argv[] elements == "/home/vagrant/FuzzInvariant/afl-2.52b/overflow/daikon/overflow"
-return == 0
+No return from procedure observed 2 times.  Unmatched entries are ignored!
+Unterminated calls:
+  ..binarySearch() : 1 invocation
+  ..main() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
 Exiting Daikon.
