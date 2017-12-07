@@ -193,33 +193,23 @@ Daikon[7] can conduct dynamic inference of invariants for applications in softwa
 \item The Daikon Invariant detector
 \end{enumerate}
 
+\section{Evaluation}
+In this project, we would like to compare the original AFL with our modified AFL with invariants. The efficiency to find the bug is our evaluation criteria. The most common approach -- comparing by the computation time, however, is not an idea testing method to our case. Since we integrate two existing applications using native approach, the time consumption may largely due to the implementation instead of the algorithm. Other factors may also affect such as the hardware. Thus, the best criteria would be the testing iterations before targeting a new bug. In another word, we want to record how many test cases has been used in AFL to find the bug and compare this number.
+
 
 %% Acknowledgments
-\begin{acks}                            %% acks environment is optional
-                                        %% contents suppressed with 'anonymous'
-  %% Commands \grantsponsor{<sponsorID>}{<name>}{<url>} and
-  %% \grantnum[<url>]{<sponsorID>}{<number>} should be used to
-  %% acknowledge financial support and will be used by metadata
-  %% extraction tools.
-  This material is based upon work supported by the
-  \grantsponsor{GS100000001}{National Science
-    Foundation}{http://dx.doi.org/10.13039/100000001} under Grant
-  No.~\grantnum{GS100000001}{nnnnnnn} and Grant
-  No.~\grantnum{GS100000001}{mmmmmmm}.  Any opinions, findings, and
-  conclusions or recommendations expressed in this material are those
-  of the author and do not necessarily reflect the views of the
-  National Science Foundation.
-\end{acks}
+
 
 
 %% Bibliography
-%\bibliography{bibfile}
 
-
+\bibliography{report}
 %% Appendix
 \appendix
 \section{Appendix}
 
 Text of appendix \ldots
+
+
 
 \end{document}
