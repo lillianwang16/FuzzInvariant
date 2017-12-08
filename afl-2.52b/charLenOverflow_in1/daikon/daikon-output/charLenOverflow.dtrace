@@ -1,0 +1,13 @@
+
+..main():::ENTER
+this_invocation_nonce
+0
+argc
+2
+1
+argv
+0xfff000208
+1
+argv[..]
+[ "/vagrant/FuzzInvariant/afl-2.52b/charLenOverflow/daikon/charLenOverflow" ]
+1

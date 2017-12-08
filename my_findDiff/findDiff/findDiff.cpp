@@ -9,12 +9,13 @@
 #include "findDiff.hpp"
 #include <iostream>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
-bool findDiff() {
-    ifstream file1("text1.txt");
-    ifstream file2("text2.txt");
+bool findDiff(string text1, string text2) {
+    ifstream file1(text1);
+    ifstream file2(text2);
     char c1, c2;
     int diff = 0;
     while (file1.good() || file2.good()) {

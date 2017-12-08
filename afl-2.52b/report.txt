@@ -1,0 +1,2 @@
+Total tries: 75
+Interesting cases: 76

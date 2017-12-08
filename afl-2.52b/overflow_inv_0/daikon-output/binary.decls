@@ -1,0 +1,126 @@
+input-language C/C++
+decl-version 2.0
+var-comparability implicit
+
+ppt ..binarySearch():::ENTER
+  ppt-type enter
+  variable arr
+    var-kind variable
+    rep-type hashcode
+    dec-type int*
+    flags is_param 
+    comparability 1
+  variable arr[..]
+    var-kind array
+    enclosing-var arr
+    array 1
+    rep-type int[]
+    dec-type int[]
+    comparability 2
+  variable l
+    var-kind variable
+    rep-type int
+    dec-type int
+    flags is_param 
+    comparability 3
+  variable r
+    var-kind variable
+    rep-type int
+    dec-type int
+    flags is_param 
+    comparability 4
+  variable x
+    var-kind variable
+    rep-type int
+    dec-type int
+    flags is_param 
+    comparability 5
+
+ppt ..binarySearch():::EXIT0
+  ppt-type subexit
+  variable arr
+    var-kind variable
+    rep-type hashcode
+    dec-type int*
+    flags is_param 
+    comparability 1
+  variable arr[..]
+    var-kind array
+    enclosing-var arr
+    array 1
+    rep-type int[]
+    dec-type int[]
+    comparability 2
+  variable l
+    var-kind variable
+    rep-type int
+    dec-type int
+    flags is_param 
+    comparability 3
+  variable r
+    var-kind variable
+    rep-type int
+    dec-type int
+    flags is_param 
+    comparability 4
+  variable x
+    var-kind variable
+    rep-type int
+    dec-type int
+    flags is_param 
+    comparability 5
+  variable return
+    var-kind variable
+    rep-type int
+    dec-type int
+    comparability 6
+
+ppt ..main():::ENTER
+  ppt-type enter
+  variable argc
+    var-kind variable
+    rep-type int
+    dec-type int
+    flags is_param 
+    comparability 1
+  variable argv
+    var-kind variable
+    rep-type hashcode
+    dec-type char**
+    flags is_param 
+    comparability 2
+  variable argv[..]
+    var-kind array
+    enclosing-var argv
+    array 1
+    rep-type string[]
+    dec-type char*[]
+    comparability 3
+
+ppt ..main():::EXIT0
+  ppt-type subexit
+  variable argc
+    var-kind variable
+    rep-type int
+    dec-type int
+    flags is_param 
+    comparability 1
+  variable argv
+    var-kind variable
+    rep-type hashcode
+    dec-type char**
+    flags is_param 
+    comparability 2
+  variable argv[..]
+    var-kind array
+    enclosing-var argv
+    array 1
+    rep-type string[]
+    dec-type char*[]
+    comparability 3
+  variable return
+    var-kind variable
+    rep-type int
+    dec-type int
+    comparability 4
+

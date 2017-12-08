@@ -10,6 +10,9 @@
 #define findDiff1_hpp
 
 #include <stdio.h>
+#include <string>
 
 #endif /* findDiff1_hpp */
-bool findDiff1();
+using namespace std;
+
+bool findDiff1(string text1, string text2);

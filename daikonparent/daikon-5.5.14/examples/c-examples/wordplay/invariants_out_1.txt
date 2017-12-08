@@ -1,0 +1,1328 @@
+Daikon version 5.5.14, released October 3, 2017; http://plse.cs.washington.edu/daikon.
+Reading declaration files .(read 1 decls file)
+Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+..alphabetic():::ENTER
+::words2[] == [IRONDACK, IRYMEAID, KOTAEN, MIEEN, ACTIEVATE, EDE, IERE, ADEDE, ACTIVEITY, DINEE, CKE, CROEMANCY, CKE, NAMENTED]
+::words2mem == "IRONDACK"
+::words2ptrs[] == [IRONDACK, IRYMEAID, KOTAEN, MIEEN, ACTIEVATE, EDE, IERE, ADEDE, ACTIVEITY, DINEE, CKE, CROEMANCY, CKE, NAMENTED]
+::keymem == "IRONDACK"
+::wordmasks == null
+::longestlength one of { 0, 8, 9 }
+::largestlet == 0
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 == null
+::lindx2 == null
+::findx1 has only one value
+::findx1[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx1[] elements == 0
+::findx2 has only one value
+::findx2[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx2[] elements == 0
+::alphstr in ::words2[]
+::alphstr in ::words2ptrs[]
+::alphstr != s
+::words2mem in ::words2[]
+::keymem in ::words2[]
+s in ::words2[]
+::words2mem in ::words2ptrs[]
+::keymem in ::words2ptrs[]
+s in ::words2ptrs[]
+::wordsn[] elements < ::ncount
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements > ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::findx1[] elements == ::largestlet
+::largestlet in ::findx1[]
+::findx2[] elements == ::largestlet
+::largestlet in ::findx2[]
+::findx1[] elements == ::rec_anag_count
+::rec_anag_count in ::findx1[]
+::findx2[] elements == ::rec_anag_count
+::rec_anag_count in ::findx2[]
+::adjacentdups in ::findx1[]
+::findx1[] elements == ::adjacentdups
+::adjacentdups in ::findx2[]
+::findx2[] elements == ::adjacentdups
+::findx1[] elements == ::specfirstword
+::specfirstword in ::findx1[]
+::findx2[] elements == ::specfirstword
+::specfirstword in ::findx2[]
+::findx1[] elements == ::maxdepthspec
+::maxdepthspec in ::findx1[]
+::findx2[] elements == ::maxdepthspec
+::maxdepthspec in ::findx2[]
+::findx1[] elements == ::silent
+::silent in ::findx1[]
+::findx2[] elements == ::silent
+::silent in ::findx2[]
+===========================================================================
+..alphabetic():::EXIT
+::words2 == orig(::words2)
+::words2ptrs == orig(::words2ptrs)
+::wordss == orig(::wordss)
+::wordsn == orig(::wordsn)
+::wordsn[] == orig(::wordsn[])
+::wordmasks == orig(::wordmasks)
+::ncount == orig(::ncount)
+::longestlength == orig(::longestlength)
+::largestlet == orig(::largestlet)
+::rec_anag_count == orig(::rec_anag_count)
+::adjacentdups == orig(::adjacentdups)
+::specfirstword == orig(::specfirstword)
+::maxdepthspec == orig(::maxdepthspec)
+::silent == orig(::silent)
+::max_depth == orig(::max_depth)
+::vowelcheck == orig(::vowelcheck)
+::lindx1 == orig(::lindx1)
+::lindx2 == orig(::lindx2)
+::findx1 == orig(::findx1)
+::findx1[] == orig(::findx1[])
+::findx2 == orig(::findx2)
+::findx2[] == orig(::findx2[])
+::words2[] == [IRONDACK, IRYMEAID, KOTAEN, MIEEN, ACTIEVATE, EDE, IERE, ADEDE, ACTIVEITY, DINEE, CKE, CROEMANCY, CKE, NAMENTED]
+::words2mem == "IRONDACK"
+::words2ptrs[] == [IRONDACK, IRYMEAID, KOTAEN, MIEEN, ACTIEVATE, EDE, IERE, ADEDE, ACTIVEITY, DINEE, CKE, CROEMANCY, CKE, NAMENTED]
+::keymem == "IRONDACK"
+::wordmasks == null
+::longestlength one of { 0, 8, 9 }
+::largestlet == 0
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 == null
+::lindx2 == null
+::findx1 has only one value
+::findx1[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx1[] elements == 0
+::findx2 has only one value
+::findx2[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx2[] elements == 0
+::alphstr in ::words2[]
+::alphstr in ::words2ptrs[]
+::alphstr == return
+::alphstr != orig(::alphstr)
+::alphstr >= orig(s)
+::words2mem in ::words2[]
+::keymem in ::words2[]
+orig(::alphstr) in ::words2[]
+orig(s) in ::words2[]
+::words2mem in ::words2ptrs[]
+::words2mem == orig(::words2mem)
+::keymem in ::words2ptrs[]
+orig(::alphstr) in ::words2ptrs[]
+orig(s) in ::words2ptrs[]
+::keymem == orig(::keymem)
+::wordsn[] elements < ::ncount
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements > ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::findx1[] elements == ::largestlet
+::largestlet in ::findx1[]
+::findx2[] elements == ::largestlet
+::largestlet in ::findx2[]
+::findx1[] elements == ::rec_anag_count
+::rec_anag_count in ::findx1[]
+::findx2[] elements == ::rec_anag_count
+::rec_anag_count in ::findx2[]
+::adjacentdups in ::findx1[]
+::findx1[] elements == ::adjacentdups
+::adjacentdups in ::findx2[]
+::findx2[] elements == ::adjacentdups
+::findx1[] elements == ::specfirstword
+::specfirstword in ::findx1[]
+::findx2[] elements == ::specfirstword
+::specfirstword in ::findx2[]
+::findx1[] elements == ::maxdepthspec
+::maxdepthspec in ::findx1[]
+::findx2[] elements == ::maxdepthspec
+::maxdepthspec in ::findx2[]
+::findx1[] elements == ::silent
+::silent in ::findx1[]
+::findx2[] elements == ::silent
+::silent in ::findx2[]
+===========================================================================
+..anagramr7():::ENTER
+::words2 has only one value
+::words2 != null
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs has only one value
+::words2ptrs != null
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss has only one value
+::wordss != null
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn has only one value
+::wordsn != null
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordsn[] sorted by <=
+::wordmasks has only one value
+::wordmasks != null
+::wordmasks[] == [2621717, 16936981, 156941, 19398933, 25, 536601, 16912665, 549905, 1044, 1044, 24, 8472, 12560, 131344]
+::ncount == 14
+::longestlength == 9
+::largestlet == 69
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 has only one value
+::lindx1 != null
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2 has only one value
+::lindx2 != null
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] == [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] == [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2]
+accum has only one value
+accum != null
+minkey != null
+level has only one value
+level != null
+level[] elements one of { 0, 1, 2 }
+level[] one of { [0], [1], [2] }
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::keymem in ::wordss[]
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements < ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::wordmasks[] elements > ::ncount
+::wordmasks[] elements > ::longestlength
+::wordmasks[] elements > ::rec_anag_count
+::wordmasks[] elements > ::adjacentdups
+::wordmasks[] elements > ::specfirstword
+::wordmasks[] elements > ::maxdepthspec
+::wordmasks[] elements > ::silent
+::wordmasks[] elements > ::vowelcheck
+::lindx1[] elements < ::ncount
+::lindx2[] elements < ::ncount
+::findx1[] elements < ::ncount
+::findx2[] elements < ::ncount
+minkey[] elements < ::ncount
+level[] elements < ::ncount
+::longestlength in ::findx2[]
+minkey[] elements < ::longestlength
+level[] elements < ::longestlength
+::lindx1[] elements < ::largestlet
+::lindx2[] elements < ::largestlet
+::findx1[] elements < ::largestlet
+::findx2[] elements < ::largestlet
+minkey[] elements < ::largestlet
+level[] elements < ::largestlet
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+minkey[] elements >= ::rec_anag_count
+level[] elements >= ::rec_anag_count
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+minkey[] elements >= ::adjacentdups
+level[] elements >= ::adjacentdups
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+minkey[] elements >= ::specfirstword
+level[] elements >= ::specfirstword
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+minkey[] elements >= ::maxdepthspec
+level[] elements >= ::maxdepthspec
+::silent in ::lindx1[]
+::silent in ::findx1[]
+minkey[] elements >= ::silent
+level[] elements >= ::silent
+::lindx1[] elements < ::max_depth
+::lindx2[] elements < ::max_depth
+::findx1[] elements < ::max_depth
+::findx2[] elements < ::max_depth
+minkey[] elements < ::max_depth
+level[] elements < ::max_depth
+===========================================================================
+..anagramr7():::EXIT
+::words2 == orig(::words2)
+::words2ptrs == orig(::words2ptrs)
+::wordss == orig(::wordss)
+::wordsn == orig(::wordsn)
+::wordsn[] == orig(::wordsn[])
+::wordmasks == orig(::wordmasks)
+::wordmasks[] == orig(::wordmasks[])
+::ncount == orig(::ncount)
+::longestlength == orig(::longestlength)
+::largestlet == orig(::largestlet)
+::rec_anag_count == orig(::rec_anag_count)
+::adjacentdups == orig(::adjacentdups)
+::specfirstword == orig(::specfirstword)
+::maxdepthspec == orig(::maxdepthspec)
+::silent == orig(::silent)
+::max_depth == orig(::max_depth)
+::vowelcheck == orig(::vowelcheck)
+::lindx1 == orig(::lindx1)
+::lindx1[] == orig(::lindx1[])
+::lindx2 == orig(::lindx2)
+::lindx2[] == orig(::lindx2[])
+::findx1 == orig(::findx1)
+::findx1[] == orig(::findx1[])
+::findx2 == orig(::findx2)
+::findx2[] == orig(::findx2[])
+minkey[] == orig(minkey[])
+::words2 has only one value
+::words2 != null
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs has only one value
+::words2ptrs != null
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss has only one value
+::wordss != null
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn has only one value
+::wordsn != null
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordsn[] sorted by <=
+::wordmasks has only one value
+::wordmasks != null
+::wordmasks[] == [2621717, 16936981, 156941, 19398933, 25, 536601, 16912665, 549905, 1044, 1044, 24, 8472, 12560, 131344]
+::ncount == 14
+::longestlength == 9
+::largestlet == 69
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 has only one value
+::lindx1 != null
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2 has only one value
+::lindx2 != null
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] == [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] == [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2]
+level[] elements one of { -1, 0, 1 }
+level[] one of { [-1], [0], [1] }
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::words2mem == orig(::words2mem)
+::keymem in ::wordss[]
+::keymem == orig(::keymem)
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements < ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::wordmasks[] elements > ::ncount
+::wordmasks[] elements > ::longestlength
+::wordmasks[] elements > ::rec_anag_count
+::wordmasks[] elements > ::adjacentdups
+::wordmasks[] elements > ::specfirstword
+::wordmasks[] elements > ::maxdepthspec
+::wordmasks[] elements > ::silent
+::wordmasks[] elements > ::vowelcheck
+::lindx1[] elements < ::ncount
+::lindx2[] elements < ::ncount
+::findx1[] elements < ::ncount
+::findx2[] elements < ::ncount
+minkey[] elements < ::ncount
+level[] elements < ::ncount
+orig(level[]) elements < ::ncount
+::longestlength in ::findx2[]
+minkey[] elements < ::longestlength
+level[] elements < ::longestlength
+orig(level[]) elements < ::longestlength
+::lindx1[] elements < ::largestlet
+::lindx2[] elements < ::largestlet
+::findx1[] elements < ::largestlet
+::findx2[] elements < ::largestlet
+minkey[] elements < ::largestlet
+level[] elements < ::largestlet
+orig(level[]) elements < ::largestlet
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+minkey[] elements >= ::rec_anag_count
+orig(level[]) elements >= ::rec_anag_count
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+minkey[] elements >= ::adjacentdups
+orig(level[]) elements >= ::adjacentdups
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+minkey[] elements >= ::specfirstword
+orig(level[]) elements >= ::specfirstword
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+minkey[] elements >= ::maxdepthspec
+orig(level[]) elements >= ::maxdepthspec
+::silent in ::lindx1[]
+::silent in ::findx1[]
+minkey[] elements >= ::silent
+orig(level[]) elements >= ::silent
+::lindx1[] elements < ::max_depth
+::lindx2[] elements < ::max_depth
+::findx1[] elements < ::max_depth
+::findx2[] elements < ::max_depth
+minkey[] elements < ::max_depth
+level[] elements < ::max_depth
+orig(level[]) elements < ::max_depth
+level[] elements <= ::vowelcheck
+level[] < orig(level[]) (elementwise)
+===========================================================================
+..extract():::ENTER
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordsn[] sorted by <=
+::wordmasks[] == [2621717, 16936981, 156941, 19398933, 25, 536601, 16912665, 549905, 1044, 1044, 24, 8472, 12560, 131344]
+::longestlength one of { 0, 8, 9 }
+::largestlet one of { 0, 69 }
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] one of { [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] }
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] one of { [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2] }
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::keymem in ::wordss[]
+s2 in ::wordss[]
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements < ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::wordmasks[] elements > ::ncount
+::wordmasks[] elements > ::longestlength
+::wordmasks[] elements > ::rec_anag_count
+::wordmasks[] elements > ::adjacentdups
+::wordmasks[] elements > ::specfirstword
+::wordmasks[] elements > ::maxdepthspec
+::wordmasks[] elements > ::silent
+::wordmasks[] elements > ::vowelcheck
+::lindx1[] elements < ::ncount
+::lindx2[] elements < ::ncount
+::findx1[] elements <= ::ncount
+::findx2[] elements <= ::ncount
+::lindx1[] elements < ::largestlet
+::lindx2[] elements < ::largestlet
+::findx1[] elements <= ::largestlet
+::findx2[] elements <= ::largestlet
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+::silent in ::lindx1[]
+::silent in ::findx1[]
+::lindx1[] elements < ::max_depth
+::lindx2[] elements < ::max_depth
+::findx1[] elements < ::max_depth
+::findx2[] elements < ::max_depth
+===========================================================================
+..extract():::EXIT
+::words2 == orig(::words2)
+::words2ptrs == orig(::words2ptrs)
+::wordss == orig(::wordss)
+::wordsn == orig(::wordsn)
+::wordsn[] == orig(::wordsn[])
+::wordmasks == orig(::wordmasks)
+::wordmasks[] == orig(::wordmasks[])
+::ncount == orig(::ncount)
+::longestlength == orig(::longestlength)
+::largestlet == orig(::largestlet)
+::rec_anag_count == orig(::rec_anag_count)
+::adjacentdups == orig(::adjacentdups)
+::specfirstword == orig(::specfirstword)
+::maxdepthspec == orig(::maxdepthspec)
+::silent == orig(::silent)
+::max_depth == orig(::max_depth)
+::vowelcheck == orig(::vowelcheck)
+::lindx1 == orig(::lindx1)
+::lindx1[] == orig(::lindx1[])
+::lindx2 == orig(::lindx2)
+::lindx2[] == orig(::lindx2[])
+::findx1 == orig(::findx1)
+::findx1[] == orig(::findx1[])
+::findx2 == orig(::findx2)
+::findx2[] == orig(::findx2[])
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordsn[] sorted by <=
+::wordmasks[] == [2621717, 16936981, 156941, 19398933, 25, 536601, 16912665, 549905, 1044, 1044, 24, 8472, 12560, 131344]
+::longestlength one of { 0, 8, 9 }
+::largestlet one of { 0, 69 }
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] one of { [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] }
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] one of { [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2] }
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::words2mem == orig(::words2mem)
+::keymem in ::wordss[]
+orig(s2) in ::wordss[]
+::keymem == orig(::keymem)
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements < ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::wordmasks[] elements > ::ncount
+::wordmasks[] elements > ::longestlength
+::wordmasks[] elements > ::rec_anag_count
+::wordmasks[] elements > ::adjacentdups
+::wordmasks[] elements > ::specfirstword
+::wordmasks[] elements > ::maxdepthspec
+::wordmasks[] elements > ::silent
+::wordmasks[] elements > ::vowelcheck
+::lindx1[] elements < ::ncount
+::lindx2[] elements < ::ncount
+::findx1[] elements <= ::ncount
+::findx2[] elements <= ::ncount
+::lindx1[] elements < ::largestlet
+::lindx2[] elements < ::largestlet
+::findx1[] elements <= ::largestlet
+::findx2[] elements <= ::largestlet
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+::silent in ::lindx1[]
+::silent in ::findx1[]
+::lindx1[] elements < ::max_depth
+::lindx2[] elements < ::max_depth
+::findx1[] elements < ::max_depth
+::findx2[] elements < ::max_depth
+===========================================================================
+..intmask():::ENTER
+::words2 has only one value
+::words2 != null
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs has only one value
+::words2ptrs != null
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss has only one value
+::wordss != null
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn has only one value
+::wordsn != null
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordsn[] sorted by <=
+::wordmasks has only one value
+::wordmasks != null
+::ncount == 14
+::longestlength == 9
+::largestlet == 69
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 has only one value
+::lindx1 != null
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2 has only one value
+::lindx2 != null
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] == [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] == [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2]
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::keymem in ::wordss[]
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements < ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::wordmasks[] elements > ::ncount
+::wordmasks[] elements > ::longestlength
+::wordmasks[] elements > ::rec_anag_count
+::wordmasks[] elements > ::adjacentdups
+::wordmasks[] elements > ::specfirstword
+::wordmasks[] elements > ::maxdepthspec
+::wordmasks[] elements > ::silent
+::wordmasks[] elements > ::vowelcheck
+::lindx1[] elements < ::ncount
+::lindx2[] elements < ::ncount
+::findx1[] elements < ::ncount
+::findx2[] elements < ::ncount
+::longestlength in ::findx2[]
+::lindx1[] elements < ::largestlet
+::lindx2[] elements < ::largestlet
+::findx1[] elements < ::largestlet
+::findx2[] elements < ::largestlet
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+::silent in ::lindx1[]
+::silent in ::findx1[]
+::lindx1[] elements < ::max_depth
+::lindx2[] elements < ::max_depth
+::findx1[] elements < ::max_depth
+::findx2[] elements < ::max_depth
+===========================================================================
+..intmask():::EXIT
+::words2 == orig(::words2)
+::words2ptrs == orig(::words2ptrs)
+::wordss == orig(::wordss)
+::wordsn == orig(::wordsn)
+::wordsn[] == orig(::wordsn[])
+::wordmasks == orig(::wordmasks)
+::wordmasks[] == orig(::wordmasks[])
+::ncount == orig(::ncount)
+::longestlength == orig(::longestlength)
+::largestlet == orig(::largestlet)
+::rec_anag_count == orig(::rec_anag_count)
+::adjacentdups == orig(::adjacentdups)
+::specfirstword == orig(::specfirstword)
+::maxdepthspec == orig(::maxdepthspec)
+::silent == orig(::silent)
+::max_depth == orig(::max_depth)
+::vowelcheck == orig(::vowelcheck)
+::lindx1 == orig(::lindx1)
+::lindx1[] == orig(::lindx1[])
+::lindx2 == orig(::lindx2)
+::lindx2[] == orig(::lindx2[])
+::findx1 == orig(::findx1)
+::findx1[] == orig(::findx1[])
+::findx2 == orig(::findx2)
+::findx2[] == orig(::findx2[])
+::words2 has only one value
+::words2 != null
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs has only one value
+::words2ptrs != null
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss has only one value
+::wordss != null
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn has only one value
+::wordsn != null
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordsn[] sorted by <=
+::wordmasks has only one value
+::wordmasks != null
+::ncount == 14
+::longestlength == 9
+::largestlet == 69
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 has only one value
+::lindx1 != null
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2 has only one value
+::lindx2 != null
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] == [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] == [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2]
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::words2mem == orig(::words2mem)
+::keymem in ::wordss[]
+::keymem == orig(::keymem)
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements < ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::wordsn[] elements < return
+::wordmasks[] elements > ::ncount
+::wordmasks[] elements > ::longestlength
+::wordmasks[] elements > ::rec_anag_count
+::wordmasks[] elements > ::adjacentdups
+::wordmasks[] elements > ::specfirstword
+::wordmasks[] elements > ::maxdepthspec
+::wordmasks[] elements > ::silent
+::wordmasks[] elements > ::vowelcheck
+::lindx1[] elements < ::ncount
+::lindx2[] elements < ::ncount
+::findx1[] elements < ::ncount
+::findx2[] elements < ::ncount
+::longestlength in ::findx2[]
+::lindx1[] elements < ::largestlet
+::lindx2[] elements < ::largestlet
+::findx1[] elements < ::largestlet
+::findx2[] elements < ::largestlet
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+::silent in ::lindx1[]
+::silent in ::findx1[]
+::lindx1[] elements < ::max_depth
+::lindx2[] elements < ::max_depth
+::findx1[] elements < ::max_depth
+::findx2[] elements < ::max_depth
+::lindx1[] elements < return
+::lindx2[] elements < return
+::findx1[] elements < return
+::findx2[] elements < return
+===========================================================================
+..main():::ENTER
+::words2 == null
+::words2ptrs == null
+::wordss == null
+::wordsn == null
+::wordmasks == null
+::ncount == 0
+::longestlength == 0
+::largestlet == 0
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 0
+::vowelcheck == 0
+::lindx1 == null
+::lindx2 == null
+::findx1 has only one value
+::findx1[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx1[] elements == 0
+::findx2 has only one value
+::findx2[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx2[] elements == 0
+argc == 4
+argv has only one value
+argv[] == [./wordplay]
+argv[] elements == "./wordplay"
+::findx1[] elements == ::ncount
+::ncount in ::findx1[]
+::findx2[] elements == ::ncount
+::ncount in ::findx2[]
+::findx1[] elements == ::longestlength
+::longestlength in ::findx1[]
+::findx2[] elements == ::longestlength
+::longestlength in ::findx2[]
+::findx1[] elements == ::largestlet
+::largestlet in ::findx1[]
+::findx2[] elements == ::largestlet
+::largestlet in ::findx2[]
+::findx1[] elements == ::rec_anag_count
+::rec_anag_count in ::findx1[]
+::findx2[] elements == ::rec_anag_count
+::rec_anag_count in ::findx2[]
+::adjacentdups in ::findx1[]
+::findx1[] elements == ::adjacentdups
+::adjacentdups in ::findx2[]
+::findx2[] elements == ::adjacentdups
+::findx1[] elements == ::specfirstword
+::specfirstword in ::findx1[]
+::findx2[] elements == ::specfirstword
+::specfirstword in ::findx2[]
+::findx1[] elements == ::maxdepthspec
+::maxdepthspec in ::findx1[]
+::findx2[] elements == ::maxdepthspec
+::maxdepthspec in ::findx2[]
+::findx1[] elements == ::silent
+::silent in ::findx1[]
+::findx2[] elements == ::silent
+::silent in ::findx2[]
+::findx1[] elements == ::max_depth
+::max_depth in ::findx1[]
+::findx2[] elements == ::max_depth
+::max_depth in ::findx2[]
+::findx1[] elements == ::vowelcheck
+::vowelcheck in ::findx1[]
+::findx2[] elements == ::vowelcheck
+::vowelcheck in ::findx2[]
+===========================================================================
+..main():::EXIT
+::rec_anag_count == orig(::rec_anag_count)
+::adjacentdups == orig(::adjacentdups)
+::specfirstword == orig(::specfirstword)
+::maxdepthspec == orig(::maxdepthspec)
+::silent == orig(::silent)
+::findx1 == orig(::findx1)
+::findx2 == orig(::findx2)
+::words2 has only one value
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs has only one value
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss has only one value
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn has only one value
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordmasks has only one value
+::wordmasks[] == [2621717, 16936981, 156941, 19398933, 25, 536601, 16912665, 549905, 1044, 1044, 24, 8472, 12560, 131344]
+::ncount == 14
+::longestlength == 9
+::largestlet == 69
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 has only one value
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2 has only one value
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] == [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] == [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2]
+argv[] == [./wordplay]
+argv[] elements == "./wordplay"
+return == 0
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::keymem in ::wordss[]
+::longestlength in ::wordsn[]
+orig(argc) in ::wordsn[]
+::longestlength in ::findx2[]
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+::rec_anag_count in orig(::findx1[])
+orig(::findx1[]) elements == ::rec_anag_count
+::rec_anag_count in orig(::findx2[])
+orig(::findx2[]) elements == ::rec_anag_count
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+::adjacentdups in orig(::findx1[])
+orig(::findx1[]) elements == ::adjacentdups
+::adjacentdups in orig(::findx2[])
+orig(::findx2[]) elements == ::adjacentdups
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+::specfirstword in orig(::findx1[])
+orig(::findx1[]) elements == ::specfirstword
+::specfirstword in orig(::findx2[])
+orig(::findx2[]) elements == ::specfirstword
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+::maxdepthspec in orig(::findx1[])
+orig(::findx1[]) elements == ::maxdepthspec
+::maxdepthspec in orig(::findx2[])
+orig(::findx2[]) elements == ::maxdepthspec
+::silent in ::lindx1[]
+::silent in ::findx1[]
+::silent in orig(::findx1[])
+orig(::findx1[]) elements == ::silent
+::silent in orig(::findx2[])
+orig(::findx2[]) elements == ::silent
+return in ::lindx1[]
+orig(::ncount) in ::lindx1[]
+orig(::longestlength) in ::lindx1[]
+orig(::largestlet) in ::lindx1[]
+orig(::max_depth) in ::lindx1[]
+orig(::vowelcheck) in ::lindx1[]
+orig(argc) in ::lindx1[]
+return in ::findx1[]
+orig(::ncount) in ::findx1[]
+orig(::longestlength) in ::findx1[]
+orig(::largestlet) in ::findx1[]
+orig(::max_depth) in ::findx1[]
+orig(::vowelcheck) in ::findx1[]
+orig(::findx1[]) elements == return
+return in orig(::findx1[])
+orig(::findx2[]) elements == return
+return in orig(::findx2[])
+===========================================================================
+..numvowels():::ENTER
+::words2 has only one value
+::words2 != null
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs has only one value
+::words2ptrs != null
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss has only one value
+::wordss != null
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn has only one value
+::wordsn != null
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordsn[] sorted by <=
+::wordmasks has only one value
+::wordmasks != null
+::wordmasks[] == [2621717, 16936981, 156941, 19398933, 25, 536601, 16912665, 549905, 1044, 1044, 24, 8472, 12560, 131344]
+::ncount == 14
+::longestlength == 9
+::largestlet == 69
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 has only one value
+::lindx1 != null
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2 has only one value
+::lindx2 != null
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] == [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] == [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2]
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::keymem in ::wordss[]
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements < ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::wordmasks[] elements > ::ncount
+::wordmasks[] elements > ::longestlength
+::wordmasks[] elements > ::rec_anag_count
+::wordmasks[] elements > ::adjacentdups
+::wordmasks[] elements > ::specfirstword
+::wordmasks[] elements > ::maxdepthspec
+::wordmasks[] elements > ::silent
+::wordmasks[] elements > ::vowelcheck
+::lindx1[] elements < ::ncount
+::lindx2[] elements < ::ncount
+::findx1[] elements < ::ncount
+::findx2[] elements < ::ncount
+::longestlength in ::findx2[]
+::lindx1[] elements < ::largestlet
+::lindx2[] elements < ::largestlet
+::findx1[] elements < ::largestlet
+::findx2[] elements < ::largestlet
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+::silent in ::lindx1[]
+::silent in ::findx1[]
+::lindx1[] elements < ::max_depth
+::lindx2[] elements < ::max_depth
+::findx1[] elements < ::max_depth
+::findx2[] elements < ::max_depth
+===========================================================================
+..numvowels():::EXIT
+::words2 == orig(::words2)
+::words2ptrs == orig(::words2ptrs)
+::wordss == orig(::wordss)
+::wordsn == orig(::wordsn)
+::wordsn[] == orig(::wordsn[])
+::wordmasks == orig(::wordmasks)
+::wordmasks[] == orig(::wordmasks[])
+::ncount == orig(::ncount)
+::longestlength == orig(::longestlength)
+::largestlet == orig(::largestlet)
+::rec_anag_count == orig(::rec_anag_count)
+::adjacentdups == orig(::adjacentdups)
+::specfirstword == orig(::specfirstword)
+::maxdepthspec == orig(::maxdepthspec)
+::silent == orig(::silent)
+::max_depth == orig(::max_depth)
+::vowelcheck == orig(::vowelcheck)
+::lindx1 == orig(::lindx1)
+::lindx1[] == orig(::lindx1[])
+::lindx2 == orig(::lindx2)
+::lindx2[] == orig(::lindx2[])
+::findx1 == orig(::findx1)
+::findx1[] == orig(::findx1[])
+::findx2 == orig(::findx2)
+::findx2[] == orig(::findx2[])
+::words2 has only one value
+::words2 != null
+::words2[] == [CKE, CKE, EDE, IERE, DINEE, MIEEN, ADEDE, KOTAEN, IRYMEAID, NAMENTED, IRONDACK, CROEMANCY, ACTIEVATE, ACTIVEITY]
+::words2mem == "IRONDACK"
+::words2ptrs has only one value
+::words2ptrs != null
+::words2ptrs[] == [ACTIEVATE, CROEMANCY, IRONDACK, ACTIVEITY, ADEDE, NAMENTED, IRYMEAID, KOTAEN, CKE, CKE, EDE, DINEE, MIEEN, IERE]
+::wordss has only one value
+::wordss != null
+::wordss[] == [AACEEITTV, ACCEMNORY, ACDIKNOR, ACEIITTVY, ADDEE, ADEEMNNT, ADEIIMRY, AEKNOT, CEK, CEK, DEE, DEEIN, EEIMN, EEIR]
+::keymem == "ACDIKNOR"
+::wordsn has only one value
+::wordsn != null
+::wordsn[] == [3, 3, 3, 4, 5, 5, 5, 6, 8, 8, 8, 9, 9, 9]
+::wordsn[] sorted by <=
+::wordmasks has only one value
+::wordmasks != null
+::wordmasks[] == [2621717, 16936981, 156941, 19398933, 25, 536601, 16912665, 549905, 1044, 1044, 24, 8472, 12560, 131344]
+::ncount == 14
+::longestlength == 9
+::largestlet == 69
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 has only one value
+::lindx1 != null
+::lindx1[] == [-1, -1, -1, 0, 3, 4, 7, -1, 8, 11]
+::lindx1[] elements >= -1
+::lindx2 has only one value
+::lindx2 != null
+::lindx2[] == [-2, -2, -2, 2, 3, 6, 7, -2, 10, 13]
+::findx1 has only one value
+::findx1[] == [0, -1, 8, 10, 12, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+::findx1[] elements >= -1
+::findx2 has only one value
+::findx2[] == [7, -2, 9, 11, 13, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2]
+::words2mem in ::words2[]
+::words2mem in ::words2ptrs[]
+::words2mem == orig(::words2mem)
+::keymem in ::wordss[]
+::keymem == orig(::keymem)
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements < ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::wordmasks[] elements > ::ncount
+::wordmasks[] elements > ::longestlength
+::wordmasks[] elements > ::rec_anag_count
+::wordmasks[] elements > ::adjacentdups
+::wordmasks[] elements > ::specfirstword
+::wordmasks[] elements > ::maxdepthspec
+::wordmasks[] elements > ::silent
+::wordmasks[] elements > ::vowelcheck
+::wordmasks[] elements > return
+::lindx1[] elements < ::ncount
+::lindx2[] elements < ::ncount
+::findx1[] elements < ::ncount
+::findx2[] elements < ::ncount
+::longestlength in ::findx2[]
+::lindx1[] elements < ::largestlet
+::lindx2[] elements < ::largestlet
+::findx1[] elements < ::largestlet
+::findx2[] elements < ::largestlet
+::rec_anag_count in ::lindx1[]
+::rec_anag_count in ::findx1[]
+::adjacentdups in ::lindx1[]
+::adjacentdups in ::findx1[]
+::specfirstword in ::lindx1[]
+::specfirstword in ::findx1[]
+::maxdepthspec in ::lindx1[]
+::maxdepthspec in ::findx1[]
+::silent in ::lindx1[]
+::silent in ::findx1[]
+::lindx1[] elements < ::max_depth
+::lindx2[] elements < ::max_depth
+::findx1[] elements < ::max_depth
+::findx2[] elements < ::max_depth
+===========================================================================
+..uppercase():::ENTER
+::words2[] == [IRONDACK, IRYMEAID, KOTAEN, MIEEN, ACTIEVATE, EDE, IERE, ADEDE, ACTIVEITY, DINEE, CKE, CROEMANCY, CKE, NAMENTED]
+::words2mem == "IRONDACK"
+::words2ptrs[] == [IRONDACK, IRYMEAID, KOTAEN, MIEEN, ACTIEVATE, EDE, IERE, ADEDE, ACTIVEITY, DINEE, CKE, CROEMANCY, CKE, NAMENTED]
+::keymem == "IRONDACK"
+::wordsn[] == [8, 8, 6, 5, 9, 3, 4, 5, 9, 5, 3, 9, 3, 8]
+::wordmasks == null
+::ncount >= 0
+::longestlength one of { 0, 8, 9 }
+::largestlet == 0
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 == null
+::lindx2 == null
+::findx1 has only one value
+::findx1[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx1[] elements == 0
+::findx2 has only one value
+::findx2[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx2[] elements == 0
+::upcasestr in ::words2[]
+::upcasestr in ::words2ptrs[]
+::words2mem in ::words2[]
+::keymem in ::words2[]
+s in ::words2[]
+::words2mem in ::words2ptrs[]
+::keymem in ::words2ptrs[]
+s in ::words2ptrs[]
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements > ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::findx1[] elements == ::largestlet
+::largestlet in ::findx1[]
+::findx2[] elements == ::largestlet
+::largestlet in ::findx2[]
+::findx1[] elements == ::rec_anag_count
+::rec_anag_count in ::findx1[]
+::findx2[] elements == ::rec_anag_count
+::rec_anag_count in ::findx2[]
+::adjacentdups in ::findx1[]
+::findx1[] elements == ::adjacentdups
+::adjacentdups in ::findx2[]
+::findx2[] elements == ::adjacentdups
+::findx1[] elements == ::specfirstword
+::specfirstword in ::findx1[]
+::findx2[] elements == ::specfirstword
+::specfirstword in ::findx2[]
+::findx1[] elements == ::maxdepthspec
+::maxdepthspec in ::findx1[]
+::findx2[] elements == ::maxdepthspec
+::maxdepthspec in ::findx2[]
+::findx1[] elements == ::silent
+::silent in ::findx1[]
+::findx2[] elements == ::silent
+::silent in ::findx2[]
+===========================================================================
+..uppercase():::EXIT
+::words2 == orig(::words2)
+::words2ptrs == orig(::words2ptrs)
+::wordss == orig(::wordss)
+::wordsn == orig(::wordsn)
+::wordsn[] == orig(::wordsn[])
+::wordmasks == orig(::wordmasks)
+::ncount == orig(::ncount)
+::longestlength == orig(::longestlength)
+::largestlet == orig(::largestlet)
+::rec_anag_count == orig(::rec_anag_count)
+::adjacentdups == orig(::adjacentdups)
+::specfirstword == orig(::specfirstword)
+::maxdepthspec == orig(::maxdepthspec)
+::silent == orig(::silent)
+::max_depth == orig(::max_depth)
+::vowelcheck == orig(::vowelcheck)
+::lindx1 == orig(::lindx1)
+::lindx2 == orig(::lindx2)
+::findx1 == orig(::findx1)
+::findx1[] == orig(::findx1[])
+::findx2 == orig(::findx2)
+::findx2[] == orig(::findx2[])
+::words2[] == [IRONDACK, IRYMEAID, KOTAEN, MIEEN, ACTIEVATE, EDE, IERE, ADEDE, ACTIVEITY, DINEE, CKE, CROEMANCY, CKE, NAMENTED]
+::words2mem == "IRONDACK"
+::words2ptrs[] == [IRONDACK, IRYMEAID, KOTAEN, MIEEN, ACTIEVATE, EDE, IERE, ADEDE, ACTIVEITY, DINEE, CKE, CROEMANCY, CKE, NAMENTED]
+::keymem == "IRONDACK"
+::wordsn[] == [8, 8, 6, 5, 9, 3, 4, 5, 9, 5, 3, 9, 3, 8]
+::wordmasks == null
+::ncount >= 0
+::longestlength one of { 0, 8, 9 }
+::largestlet == 0
+::rec_anag_count == 0
+::adjacentdups == 0
+::specfirstword == 0
+::maxdepthspec == 0
+::silent == 0
+::max_depth == 32
+::vowelcheck == 1
+::lindx1 == null
+::lindx2 == null
+::findx1 has only one value
+::findx1[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx1[] elements == 0
+::findx2 has only one value
+::findx2[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+::findx2[] elements == 0
+::upcasestr in ::words2[]
+::upcasestr in ::words2ptrs[]
+::upcasestr == return
+::words2mem in ::words2[]
+::keymem in ::words2[]
+orig(::upcasestr) in ::words2[]
+orig(s) in ::words2[]
+::words2mem in ::words2ptrs[]
+::words2mem == orig(::words2mem)
+::keymem in ::words2ptrs[]
+orig(::upcasestr) in ::words2ptrs[]
+orig(s) in ::words2ptrs[]
+::keymem == orig(::keymem)
+::wordsn[] elements < ::ncount
+::longestlength in ::wordsn[]
+::wordsn[] elements <= ::longestlength
+::wordsn[] elements > ::largestlet
+::wordsn[] elements > ::rec_anag_count
+::wordsn[] elements > ::adjacentdups
+::wordsn[] elements > ::specfirstword
+::wordsn[] elements > ::maxdepthspec
+::wordsn[] elements > ::silent
+::wordsn[] elements < ::max_depth
+::wordsn[] elements > ::vowelcheck
+::findx1[] elements == ::largestlet
+::largestlet in ::findx1[]
+::findx2[] elements == ::largestlet
+::largestlet in ::findx2[]
+::findx1[] elements == ::rec_anag_count
+::rec_anag_count in ::findx1[]
+::findx2[] elements == ::rec_anag_count
+::rec_anag_count in ::findx2[]
+::adjacentdups in ::findx1[]
+::findx1[] elements == ::adjacentdups
+::adjacentdups in ::findx2[]
+::findx2[] elements == ::adjacentdups
+::findx1[] elements == ::specfirstword
+::specfirstword in ::findx1[]
+::findx2[] elements == ::specfirstword
+::specfirstword in ::findx2[]
+::findx1[] elements == ::maxdepthspec
+::maxdepthspec in ::findx1[]
+::findx2[] elements == ::maxdepthspec
+::maxdepthspec in ::findx2[]
+::findx1[] elements == ::silent
+::silent in ::findx1[]
+::findx2[] elements == ::silent
+::silent in ::findx2[]
+Exiting Daikon.
