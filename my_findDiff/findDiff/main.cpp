@@ -7,7 +7,6 @@
 //
 
 #include <iostream>
-// #include "findDiff.hpp"
 #include "findDiff1.hpp"
 #include <fstream>
 #include <string>
